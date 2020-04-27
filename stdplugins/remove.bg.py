@@ -53,7 +53,7 @@ async def _(event):
             output_file_name = ReTrieveFile(downloaded_file_name)
             os.remove(downloaded_file_name)
     elif input_str:
-        await event.edit("sending to ReMove.BG")
+        await event.edit("sending to Server")
         output_file_name = ReTrieveURL(input_str)
     else:
         await event.edit(HELP_STR)
@@ -61,7 +61,7 @@ async def _(event):
     contentType = output_file_name.headers.get("content-type")
     if "image" in contentType:
         with io.BytesIO(output_file_name.content) as remove_bg_image:
-            remove_bg_image.name = "BG_ReMove.png"
+            remove_bg_image.name = "BG_ReMoved.png"
             await borg.send_file(
                 event.chat_id,
                 remove_bg_image,
