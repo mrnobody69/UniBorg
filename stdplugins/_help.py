@@ -2,7 +2,7 @@ import sys
 from telethon import events, functions, __version__
 from uniborg.util import admin_cmd
 
-@borg.on(admin_cmd(pattern="helpme ?(.*)", allow_sudo=True))  # pylint:disable=E0602
+@borg.on(admin_cmd(pattern="alive ?(.*)", allow_sudo=True))  # pylint:disable=E0602
 async def _(event):
     if event.fwd_from:
         return
@@ -11,7 +11,7 @@ async def _(event):
         s_help_string = borg._plugins[splugin_name].__doc__
     else:
         s_help_string = ""
-    help_string = """`Hi, I am a Bot in service of Master Jas. I am Running.. 
+    help_string = """`Hi, I am a Bot in service of Master Alex. I am Running.. 
 Python {}
 Telethon {}`
 """.format(
