@@ -1,8 +1,8 @@
 """ Powered by @Google
 Available Commands:
-.google search <query>
+.google <query>
 .google image <query>
-.google reverse search"""
+.reverse"""
 
 import asyncio
 import os
@@ -17,7 +17,7 @@ def progress(current, total):
     logger.info("Downloaded {} of {}\nCompleted {}".format(current, total, (current / total) * 100))
 
 
-@borg.on(admin_cmd(pattern="google search (.*)"))
+@borg.on(admin_cmd(pattern="google (.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -75,7 +75,7 @@ async def _(event):
     await event.delete()
 
 
-@borg.on(admin_cmd(pattern="google reverse search"))
+@borg.on(admin_cmd(pattern="reverse"))
 async def _(event):
     if event.fwd_from:
         return
