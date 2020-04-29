@@ -10,3 +10,4 @@ anime-downloader
 pylast
 chatterbot-corpus
 -r ./requirements-stdborg.txt
+covid
