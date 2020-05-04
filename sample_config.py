@@ -122,6 +122,7 @@ class Config(object):
         t_file.write(AUTH_TOKEN_DATA)
         t_file.close()
 
+    GENIUS = os.environ.get("GENIUS_API_TOKEN", None)
 
 class Production(Config):
     LOGGER = False
