@@ -31,3 +31,10 @@ oauth2client
 httplib2==0.15.0
 gitpython
 heroku3
+google-api-python-client
+google_auth_oauthlib
+gsearch>=1.6.0
+PyGithub
+git+https://github.com/ahupp/python-magic
+lyricsgenius
+pySmartDL
