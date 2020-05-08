@@ -7,7 +7,7 @@ from uniborg.util import admin_cmd
 import random
 
 
-@borg.on(admin_cmd(pattern="carbon ?(.*)"))
+@borg.on(admin_cmd(pattern="carbonsh ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
