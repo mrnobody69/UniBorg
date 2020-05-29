@@ -108,6 +108,8 @@ class Config(object):
     MONGO_URI = os.environ.get("MONGO_URI", None)
     #Lydia API
     LYDIA_API = os.environ.get("LYDIA_API",None)
+    # JustWatch Country
+    WATCH_COUNTRY = os.environ.get("WATCH_COUNTRY","IN")
     #Google Chrome Stuff
     CHROME_DRIVER = os.environ.get("CHROME_DRIVER", None)
     GOOGLE_CHROME_BIN = os.environ.get("GOOGLE_CHROME_BIN", None)
