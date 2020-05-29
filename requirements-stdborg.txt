@@ -37,3 +37,4 @@ PyGithub
 git+https://github.com/ahupp/python-magic
 lyricsgenius
 pySmartDL
+justwatch
